@@ -6,3 +6,7 @@ body {
   background-color: transparent;
   border: 2px solid #ddd;
 }
+
+.btn-large {
+  width: 150px;
+}
