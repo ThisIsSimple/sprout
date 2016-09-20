@@ -1,0 +1,12 @@
+.btn-large {
+  width: 150px;
+}
+
+div.col.s11 {
+  padding-right: 0;
+}
+
+div.col.s1 {
+  width: 30px !important;
+  padding: 0;
+}
