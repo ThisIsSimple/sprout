@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/register.css" media="screen" title="no title">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/register.js"></script>
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo">EasyWait</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><div class="userView">
+              <img class="background" src="images/back.png">
+              <a href="#!name"><span class="white-text name">로그인 후 이용해 주세요.</span></a>
+              <a href="#!email"><span class="white-text email">|</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+
+        <div class="card-panel white-text">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="userid" type="text" class="validate">
+                  <label for="userid">아이디</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">비밀번호</label>
+                </div>
+              </div>
+            <div class="col s12 divider"></div>
+            <div class="col s12">
+              <p>아래의 정보들은 사용자 정보에 기반해 더 나은 서비스를 제공하기 위함입니다.</p>
+            </div>
+            <div class="col s12 divider"></div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="name" type="text" class="validate">
+                  <label for="name">이름</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  성별
+                  <p>
+                    <input name="gender" type="radio" id="male" />
+                    <label for="male" class="white-text">남</label>
+                  </p>
+                  <p>
+                    <input name="gender" type="radio" id="female" />
+                    <label for="female" class="white-text">여</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  나이
+                </div>
+                  <div class="col s6">
+                    <p>
+                      <input name="age" type="radio" id="age10" />
+                      <label for="age10" class="white-text">10대</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age20" />
+                      <label for="age20" class="white-text">20대</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age30" />
+                      <label for="age30" class="white-text">30대</label>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p>
+                      <input name="age" type="radio" id="age40" />
+                      <label for="age40" class="white-text">40대</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age50" />
+                      <label for="age50" class="white-text">50대</label>
+                    </p>
+                    <p>
+                      <input name="age" type="radio" id="age60" />
+                      <label for="age60" class="white-text">60대 이상</label>
+                    </p>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row center-align">
+          <div class="col s12">
+            <a class="waves-effect waves-light btn-large">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
