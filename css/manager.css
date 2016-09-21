@@ -1,0 +1,31 @@
+#sidebar {
+  padding: 0;
+  height: 100%;
+}
+
+.collection {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.collection .collection-item {
+  background-color: inherit;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.collection a.collection-item:hover:not(.active) {
+  background-color: #555;
+}
+
+.collection .collection-item.active {
+  color: #fff;
+}
+
+
+#admin-content {
+  padding: 10px 30px;
+}

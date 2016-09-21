@@ -14,3 +14,7 @@ body {
 .display-none {
   display: none;
 }
+
+.blank {
+  height: 100px;
+}

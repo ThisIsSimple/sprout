@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/admin.css" media="screen" title="no title">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/admin.js"></script>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper z-depth-1">
+          <div class="container">
+            <a href="#!" class="brand-logo center">EasyWait</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+              <li><div class="userView">
+                <div class="background" style="color: #fff;"></div>
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+              </div></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+              <li><a href="#!">Second Link</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="subheader">Subheader</a></li>
+              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="row">
+        <div id="sidebar" class="col m2 hide-on-small-only z-depth-5" style="position: fixed">
+          <div class="collection">
+            <a href="#!" class="collection-item">통계</a>
+            <a href="#!" class="collection-item active">오늘</a>
+            <a href="#!" class="collection-item">어제</a>
+          </div>
+        </div>
+        <div id="admin-content" class="col m10 offset-m2">
+          <div class="row">
+            <div class="col m12 l8 white-text">
+              <h5><b>시간별 통계</b></h5>
+              <div class="card-panel center-align">
+                <div class="row">
+                  <ul id="bars">
+                    <li><div class="bar" data-number="1"></div><span>0시</span></li>
+                    <li><div class="bar" data-number="2"></div><span>2시</span></li>
+                    <li><div class="bar" data-number="3"></div><span>4시</span></li>
+                    <li><div class="bar" data-number="4"></div><span>6시</span></li>
+                    <li><div class="bar" data-number="5"></div><span>8시</span></li>
+                    <li><div class="bar" data-number="6"></div><span>10시</span></li>
+                    <li><div class="bar" data-number="7"></div><span>12시</span></li>
+                    <li><div class="bar" data-number="8"></div><span>14시</span></li>
+                    <li><div class="bar" data-number="9"></div><span>16시</span></li>
+                    <li><div class="bar" data-number="10"></div><span>18시</span></li>
+                    <li><div class="bar" data-number="11"></div><span>20시</span></li>
+                    <li><div class="bar" data-number="12"></div><span>22시</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
