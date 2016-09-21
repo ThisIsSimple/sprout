@@ -43,15 +43,106 @@
       </div>
     </nav>
 
+    <div id="survey" class="container display-none">
+      <div class="card-panel white-text">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="col s12">
+                <span>성별</span>
+                <p>
+                  <input name="gender" type="radio" id="male" />
+                  <label for="male" class="white-text">남</label>
+                </p>
+                <p>
+                  <input name="gender" type="radio" id="female" />
+                  <label for="female" class="white-text">여</label>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <span>나이</span>
+              </div>
+              <div class="col s6">
+                <p>
+                  <input name="age" type="radio" id="age10" />
+                  <label for="age10" class="white-text">10대</label>
+                </p>
+                <p>
+                  <input name="age" type="radio" id="age20" />
+                  <label for="age20" class="white-text">20대</label>
+                </p>
+                <p>
+                  <input name="age" type="radio" id="age30" />
+                  <label for="age30" class="white-text">30대</label>
+                </p>
+              </div>
+              <div class="col s6">
+                <p>
+                  <input name="age" type="radio" id="age40" />
+                  <label for="age40" class="white-text">40대</label>
+                </p>
+                <p>
+                  <input name="age" type="radio" id="age50" />
+                  <label for="age50" class="white-text">50대</label>
+                </p>
+                <p>
+                  <input name="age" type="radio" id="age60" />
+                  <label for="age60" class="white-text">60대 이상</label>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <span>의견</span>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="opinion" class="materialize-textarea"></textarea>
+                    <label for="opinion">기타 의견을 적어주세요.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              설문에서 응답해주신 정보는 다른 업체로 나가거나 제공되지 않으며, 오직 자사의 더 나은 서비스 제공을 위해 활용됩니다.
+            </p>
+        </div>
+        <div class="row center-align">
+          <div class="col s12">
+            <a class="waves-effect waves-light btn-large">설문 제출하기</a>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <div id="thank" class="container display-none">
+      <div class="card-panel white-text sometext">
+        <div class="row">
+          <div class="col s11">
+            <p>
+              참여해주셔서 감사합니다! 더 나은 서비스로 보답하겠습니다.
+            </p>
+          </div>
+          <div class="col s1 right-align">
+            <a class="close"><i class="material-icons">clear</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main>
       <div class="container">
-
         <div class="card-panel white-text sometext">
           <div class="row">
             <div class="col s11">
-              <span>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-              </span>
+              <p>
+                저희는 더 나은 서비스 제공을 위해 고객들의 사용자 정보를 수집하고 있습니다.<br>
+                설문에서 응답해주신 정보는 다른 업체로 나가거나 제공되지 않으며, 오직 자사의 더 나은 서비스 제공을 위해 활용됩니다.<br><br>
+                설문에 응해주시면 더 나은 서비스로 보답하겠습니다!
+              </p>
+                <a class="waves-effect waves-light btn">설문 참여하기</a>
             </div>
             <div class="col s1 right-align">
               <a class="close"><i class="material-icons">clear</i></a>

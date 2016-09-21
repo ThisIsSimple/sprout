@@ -10,3 +10,7 @@ body {
 .btn-large {
   width: 150px;
 }
+
+.display-none {
+  display: none;
+}
