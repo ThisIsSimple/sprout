@@ -1,6 +1,11 @@
+body {
+  background-color: #CFDCE8 ;
+}
+
 #sidebar {
   padding: 0;
   height: 100%;
+  background-color: #212121;
 }
 
 .collection {
@@ -11,7 +16,7 @@
 }
 
 .collection .collection-item {
-  background-color: inherit;
+  background-color: #212121;
   padding: 20px 20px;
   border: 0;
 }
@@ -24,39 +29,66 @@
   color: #fff;
 }
 
+#admin-content-header .col.s12 {
+  padding: 0;
+}
 
-#admin-content {
+.tabs {
+  background-color: #FAFCFD ;
+}
+
+
+.admin-content {
   padding: 20px;
 }
 
 .card-panel {
   padding: 10px;
   display: block;
-  width:
+  border: 1px solid #bbb;
+}
+
+.card-panel.graph {
+  height: 430px;
+}
+
+.card-panel.today-total {
+  height: 203px;
+}
+
+.card-title {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
-#bars {
+.bars {
   display: inline-block;
 }
 
-#bars li {
+.bars li {
   display: table-cell;
-  width: 46px;
-  height: 300px;
+  width: 70px;
+  height: 250px;
+  padding: 0 1%;
 }
 
-#bars .bar {
+.bars .bar {
   display: block;
-  width: 36px;
-  margin-left: 5px;
-  background-color: #fff;
-
+  position: relative;
+  bottom: -20%;
+  width: 100%;
+  background-color: #2196f3;
 }
 
-#bars li span {
-  width: 100%;
+.bars li span {
   position: relative;
-  bottom: -100%;
+  bottom: -25%;
+  width: 100%;
   text-align: center;
+}
+
+
+.col.m10.offset-m2 {
+  padding: 0;
 }

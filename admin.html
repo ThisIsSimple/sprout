@@ -3,7 +3,6 @@
   <head>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/admin.css" media="screen" title="no title">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,12 +12,11 @@
   <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/common.js"></script>
     <script src="js/admin.js"></script>
 
     <div class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper z-depth-1">
+        <div class="nav-wrapper">
           <div class="container">
             <a href="#!" class="brand-logo center">EasyWait</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -41,42 +39,152 @@
 
     <main>
       <div class="row">
-        <div id="sidebar" class="col m2 hide-on-small-only z-depth-5" style="position: fixed">
+        <div id="sidebar" class="col m2 hide-on-small-only" style="position: fixed">
           <div class="collection">
-            <a href="#!" class="collection-item">통계</a>
-            <a href="#!" class="collection-item active">오늘</a>
-            <a href="#!" class="collection-item">어제</a>
+            <a href="#!" class="collection-item active">통계</a>
+            <a href="#!" class="collection-item">설문조사</a>
+            <a href="#!" class="collection-item">로그아웃</a>
           </div>
         </div>
-        <div id="admin-content" class="col m10 offset-m2">
-          <div class="row">
-            <div class="col m12 l8 white-text">
-              <h5><b>시간별 통계</b></h5>
-              <div class="card-panel center-align">
-                <div class="row">
-                  <ul id="bars">
-                    <li><div class="bar" data-number="1"></div><span>0시</span></li>
-                    <li><div class="bar" data-number="2"></div><span>2시</span></li>
-                    <li><div class="bar" data-number="3"></div><span>4시</span></li>
-                    <li><div class="bar" data-number="4"></div><span>6시</span></li>
-                    <li><div class="bar" data-number="5"></div><span>8시</span></li>
-                    <li><div class="bar" data-number="6"></div><span>10시</span></li>
-                    <li><div class="bar" data-number="7"></div><span>12시</span></li>
-                    <li><div class="bar" data-number="8"></div><span>14시</span></li>
-                    <li><div class="bar" data-number="9"></div><span>16시</span></li>
-                    <li><div class="bar" data-number="10"></div><span>18시</span></li>
-                    <li><div class="bar" data-number="11"></div><span>20시</span></li>
-                    <li><div class="bar" data-number="12"></div><span>22시</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col m4">
+        <div class="col m10 offset-m2">
+          <div id="admin-content-header" class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#tab1">전체보기</a></li>
+                <li class="tab col s3"><a class="active" href="#tab2">오늘</a></li>
+                <li class="tab col s3"><a href="#tab3">어제</a></li>
+                <li class="tab col s3"><a href="#tab4">Test 4</a></li>
+              </ul>
             </div>
           </div>
+          <div id="tab1" class="col s12">전체보기</div>
+          <div id="tab2" class="col s12">
+            <div class="admin-content row">
+
+              <div class="col s12">
+                <span id="clock"></span>
+              </div>
+
+              <div class="col s12 m8 l8 blue-text">
+                <div class="card-panel graph center-align">
+                  <h5 class="card-title left-align"><b>시간별 통계</b></h5>
+                  <div class="card-content">
+                    <div class="row">
+                      <ul class="bars" id="bytime">
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="10" data-number="10"></div><span>0시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="2" data-number="2"></div><span>2시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="3" data-number="3"></div><span>4시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="4" data-number="4"></div><span>6시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="5" data-number="5"></div><span>8시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="6" data-number="6"></div><span>10시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="7" data-number="7"></div><span>12시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="15" data-number="15"></div><span>14시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="16" data-number="16"></div><span>16시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="10" data-number="10"></div><span>18시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="11" data-number="11"></div><span>20시</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="12" data-number="12"></div><span>22시</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card-panel today-total center-align">
+                  <h5 class="card-title left-align blue-text"><b>오늘 하루 방문자 수</b></h5>
+                  <h1>101<small>명</small></h1>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card-panel today-total center-align">
+                  <h5 class="card-title left-align blue-text"><b>오늘 고객 평균 대기 시간</b></h5>
+                  <h1>10<small>분</small> 24<small>초</small></h1>
+                </div>
+              </div>
+
+              <div class="col s6 m6 l6 blue-text">
+                <div class="card-panel graph center-align">
+                  <h5 class="card-title left-align"><b>나이별 통계</b></h5>
+                  <div class="card-content">
+                    <div class="row">
+                      <ul class="bars" id="byage">
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="10" data-number="10"></div><span>10대</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="6" data-number="6"></div><span>20대</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="3" data-number="3"></div><span>30대</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="4" data-number="4"></div><span>40대</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="7" data-number="7"></div><span>50대</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="6" data-number="6"></div><span>60대 이상</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="6" data-number="6"></div><span>알 수 없음</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s6 m6 l6 blue-text">
+                <div class="card-panel graph center-align">
+                  <h5 class="card-title left-align"><b>성별별 통계</b></h5>
+                  <div class="card-content">
+                    <div class="row">
+                      <ul class="bars" id="bygender">
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="10" data-number="10"></div><span>남</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="15" data-number="15"></div><span>여</span></li>
+                        <li><div class="bar tooltipped" data-position="top" data-delay="10" data-tooltip="3" data-number="3"></div><span>알 수 없음</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="tab3" class="col s12">어제</div>
+          <div id="tab4" class="col s12">Test 4</div>
         </div>
       </div>
     </main>
+
+    <script>
+    $(function() {
+      maxtime=16;
+      maxage=10;
+      maxgender=15;
+
+      $("#bytime li .bar").each( function( key, bar ) {
+        var number = $(this).data('number');
+        if(number===maxtime) {
+          $(this).css("background-color", "#F0B029");
+          $(this).find('span').css("color", "#F0B029");
+        }
+        $(this).css({
+          'height' : number/maxtime*100 + '%'
+        });
+      });
+
+      $("#byage li .bar").each( function( key, bar ) {
+        var number = $(this).data('number');
+        if(number===maxage) {
+          $(this).css("background-color", "#F0B029");
+          $(this).find('span').css("color", "#F0B029");
+        }
+        $(this).css({
+          'height' : number/maxage*100 + '%'
+        });
+      });
+
+      $("#bygender li .bar").each( function( key, bar ) {
+        var number = $(this).data('number');
+        if(number===maxgender) {
+          $(this).css("background-color", "#F0B029");
+          $(this).find('span').css("color", "#F0B029");
+        }
+        $(this).css({
+          'height' : number/maxgender*100 + '%'
+        });
+      });
+    });
+    </script>
 
   </body>
 </html>

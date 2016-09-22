@@ -2662,7 +2662,6 @@ a {
 }
 
 .z-depth-1, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -4826,7 +4825,7 @@ small {
 }
 
 .tabs .tab a {
-  color: #ee6e73;
+  color: #2196f3;
   display: block;
   width: 100%;
   height: 100%;
@@ -4836,11 +4835,11 @@ small {
 }
 
 .tabs .tab a:hover {
-  color: #f9c9cb;
+  color: #90caf9;
 }
 
 .tabs .tab.disabled a {
-  color: #f9c9cb;
+  color: #90caf9;
   cursor: default;
 }
 
@@ -4848,7 +4847,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: #1e88e5;
   will-change: left, right;
 }
 

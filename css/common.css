@@ -1,20 +1,11 @@
-body {
-  background-color: #212121;
-}
-
-.card-panel {
-  background-color: transparent;
-  border: 2px solid #ddd;
-}
-
-.btn-large {
-  width: 150px;
-}
-
 .display-none {
   display: none;
 }
 
 .blank {
   height: 100px;
+}
+
+.blue-text {
+  color: #1976d2;
 }
