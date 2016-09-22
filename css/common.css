@@ -9,3 +9,16 @@
 .blue-text {
   color: #1976d2;
 }
+
+body {
+  background-color: #212121;
+}
+
+.card-panel {
+  background-color: transparent;
+  border: 2px solid #ddd;
+}
+
+.btn-large {
+  width: 150px;
+}
